@@ -16,6 +16,6 @@ Let’s take one more glance at the concepts we just learned:
 - Built-in objects, including Math, are collections of methods and properties that JavaScript provides.
 - Here are a few more resources to add to your toolkit:
 
-[Codecademy Docs: JavaScript](https://www.codecademy.com/resources/docs/javascript)
-[Codecademy Workspaces: JavaScript](https://www.codecademy.com/workspaces/new)
+[Codecademy Docs: JavaScript](https://www.codecademy.com/resources/docs/javascript)<br>
+[Codecademy Workspaces: JavaScript](https://www.codecademy.com/workspaces/new)<br>
 Make sure to bookmark these links so you have them at your disposal.
