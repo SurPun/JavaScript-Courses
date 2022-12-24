@@ -1,7 +1,5 @@
 # INTRODUCTION TO JAVASCRIPT
 
-## Review
-
 Let’s take one more glance at the concepts we just learned:
 
 - Data is printed, or logged, to the console, a panel that displays messages, with console.log().
