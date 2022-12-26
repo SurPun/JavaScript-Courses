@@ -1,0 +1,133 @@
+# Quiz
+
+1. What is the general purpose of a conditional statement?
+
+- Conditional statements evaluate code as either true or false.
+
+2. Which of the following variables contains a truthy value?
+
+- let varOne = 'false' (non-empty strings are truthy!)
+
+3. Translate this to JavaScript:
+
+Log “Bear!” to console if isFurry is true and weight is over 100 pounds.
+
+```
+if (isFurry && weight > 100) {
+  console. log("Bear!");
+
+```
+
+4. What will the code block log to the console?
+
+```
+let weather = "spring";
+let clothingChoice = "";
+
+if (weather === "spring") {
+  clothingChoice = "Put on rain boots.";
+} else if (weather === "summer") {
+  clothingChoice = "Make sure to take your sunscreen.";
+} else if (weather === "fall") {
+  clothingChoice = "Wear a light jacket.";
+} else if (weather === 'winter') {
+  clothingChoice = "Wear a heavy coat.";
+} else {
+  console.log('Invalid weather type. ');
+ };
+console.log(clothingChoice);
+
+```
+
+- Since weather equals spring, clothingChoice is set to "Put on rain boots.".
+
+5. If isHungry equals true, which of the following expressions evaluates to true?
+
+```
+isHungry !== false
+```
+
+6. How would you properly refactor this code block using the ternary operator?
+
+```
+if (walkSignal === 'Walk') {
+console.log('You may walk!");
+} else {
+console.log('Do not walk!');
+```
+
+```
+walkSignal === 'Walk" ? console.log('You may walk!") : console.log('Do not walk!");
+```
+
+7. What will the code block log to the console?
+
+```
+let groceryItem = "apple";
+
+switch (groceryItem) {
+
+case "tomato":
+console.log("Tomatoes are $0.49");
+break;
+
+case "lime":
+console.log("Limes are $1.49");
+break;
+
+case "papaya":
+console.log("Papayas are $1.29");
+break;
+
+default:
+console.log("Invalid item");
+break;
+```
+
+- Since groceryItem = "apple", it does not match any of the cases, so the default block will run.
+
+8. To make this statement valid, what operator belongs in the \_\_\_ space below?
+
+```
+if (coin “heads") {
+console.log('coin is heads!');
+
+} else {
+console.log('coin is tails...');
+```
+
+- The === operator is used to compare values.
+
+9. What will the following code log to the console?
+
+```
+let needTacos = true;
+
+if (needTacos) {
+console.log("Finding tacos");
+} else {
+console.log("Keep on keeping on!");
+```
+
+- Since needTacos is true, the first block will run.
+
+10. What will the code block log to the console?
+
+```
+let runTime = 35;
+let runDistance = 3.5;
+
+if (runTime <= 30 && runDistance > 3.5) {
+console.log("You're super fast!");
+
+} else if (runTime >= 30 && runDistance <= 3) {
+console.log("You're not making your pace!");
+
+} else if (runTime > 3@ || runDistance > 3) {
+console.log("Nice workout!");
+} else {
+
+console.log("Keep on running!");
+```
+
+- The condition (runTime is greater than 30 OR runDistance is greater than 3) is true.
