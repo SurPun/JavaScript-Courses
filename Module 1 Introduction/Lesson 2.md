@@ -1,6 +1,7 @@
 # Variables
 
-Review Variables
+### Review
+
 Nice work! This lesson introduced you to variables, a powerful concept you will use in all your future programming endeavors.
 
 Let’s review what we learned:
