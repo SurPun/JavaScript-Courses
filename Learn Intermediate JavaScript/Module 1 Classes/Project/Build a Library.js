@@ -104,7 +104,9 @@ speed.addRating(5);
 
 console.log(speed.getAverageRating());
 
-/*
+/* 
+Project Instructions
+
 1. ---
 Let’s start by making a parent class for our Book, CD, and Movie classes. 
 
