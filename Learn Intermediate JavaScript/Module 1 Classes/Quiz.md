@@ -46,8 +46,6 @@ class Apartment extends RentalUnit {
 
 - To share data and methods between objects.
 
---- WRONG
-
 4. Which of the following problems do classes alleviate?
 
 - Classes make it easy to create multiple objects that share property names and methods.
@@ -58,7 +56,7 @@ Each instance of a class has the same properties, getters, setters, and methods.
 
 - The super keyword is used in subclasses to call a parent constructor().
 
---- WRONG
+Super accepts arguments for the parent constructor()s parameters.
 
 6. How would you call the .randomBorough() method in the example below?
 
@@ -103,13 +101,13 @@ const myApartment = new Apartment('1234 W 54th', 22000, 3);
 
 - Apartment.randomBorough()
 
---- WRONG
+You must access static methods from the class. You cannot call them on an instance of the class.
 
 7. When you create a subclass using the extends keyword, what will the class inherit from its parent?
 
 - The subclass inherits all of the parent’s getters, setters, and methods. You can also use the super keyword to set properties in the parent class.
 
---- WRONG
+Although the subclass automatically inherits the parent methods, you need to use the super keyword to set the parent properties.
 
 8. Which of the following is a method of the RentalUnit class?
 
@@ -142,7 +140,7 @@ Including .calculateMonthly(), there are technically four methods in this exampl
 
 - class
 
---- WRONG
+The class keyword is followed by a CamelCased class name.
 
 10. Why will the code below throw an error?
 
