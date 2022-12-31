@@ -18,3 +18,14 @@ function customer(order: number, name: string) {
 }
 customer(1, 'Alexander');
 ```
+
+3. Quiz: Functions
+   Fill in the code to infer that myAnswer is being assigned a value of type boolean that will surface an error if any other value type is assigned.
+
+```
+function factOrFiction() {
+  return Math.random() >= .5 ? true : false;
+}
+
+const myAnswer :  boolean = factOrFiction();
+```
