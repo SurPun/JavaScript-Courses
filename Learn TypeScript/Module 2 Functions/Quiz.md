@@ -51,14 +51,14 @@ The wheels on the bus go
 ```
 
 ```
-function proclaim(status = , repeat = ) {
+function proclaim(status = 'The wheels on the bus go', repeat = 3) {
   console.log(status);
   for (let i = 0; i < repeat; i += 1) {
     console.log('...round and round');
   }
 }
 
-proclaim;
+proclaim();
 ```
 
 -
