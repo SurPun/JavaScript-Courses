@@ -38,7 +38,8 @@ function greet(greeting: string, name?: string ) {
 }
 ```
 
--
+- greet('Hi', 'Bill', 'Gates');
+  This results in a compiler error: Expected 1 - 2 arguments, but got 3..
 
 5. Please fill in the function code with default parameters to print the message:
 
