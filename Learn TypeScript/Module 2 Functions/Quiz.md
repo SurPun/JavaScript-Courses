@@ -75,3 +75,17 @@ function sillyNameGenerator(index1: number, index2: number): void {
 
 sillyNameGenerator(2, 0)
 ```
+
+7. Fill in the code for a function that accepts a string type and number type for parameters but doesn’t return a value.
+
+```
+function repeatSyllableSong(syllable: string, repeatNumber: number): void {
+  let song: string = '';
+  for (let i = 0; i <= repeatNumber ; i++) {
+    song += syllable;
+  }
+  console.log(song);
+}
+
+repeatSyllableSong('la', 4);
+```
