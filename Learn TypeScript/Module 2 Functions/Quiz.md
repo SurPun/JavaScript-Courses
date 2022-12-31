@@ -29,3 +29,49 @@ function factOrFiction() {
 
 const myAnswer :  boolean = factOrFiction();
 ```
+
+4. Which function call will result in a compilation error?
+
+```
+function greet(greeting: string, name?: string ) {
+  return greeting + ' ' + (name || 'neighbor') + '!';
+}
+```
+
+-
+
+5. Please fill in the function code with default parameters to print the message:
+
+```
+The wheels on the bus go
+...round and round
+...round and round
+...round and round
+```
+
+```
+function proclaim(status = , repeat = ) {
+  console.log(status);
+  for (let i = 0; i < repeat; i += 1) {
+    console.log('...round and round');
+  }
+}
+
+proclaim;
+```
+
+-
+
+6. Fill in the following code to log Dinky Bubble on the console.
+
+```
+function sillyNameGenerator(index1: number, index2: number): void {
+  let firstName = ['Runny', 'Buttercup', 'Dinky'];
+
+  let lastName = ['Bubble', 'Buffalo', 'Gross'];
+
+  console.log(`${firstName[index1]} ${lastName[index2]}`)
+}
+
+sillyNameGenerator(2, 0)
+```
