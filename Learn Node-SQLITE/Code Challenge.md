@@ -34,3 +34,19 @@ db.get("SELECT superpower FROM Superhero WHERE id=12", (error, row) => {
   console.log(row.superpower)
 });
 ```
+
+4. The query in the workspace is going to return an error! Log the error to the console if it exists, otherwise log the retrieved rows.
+
+```
+const db = require('./db');
+
+db.all('SELECT * from NonexistentTable', (err, rows) => {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log(rows)
+  }
+});
+```
+
+5.
