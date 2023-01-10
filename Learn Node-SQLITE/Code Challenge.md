@@ -24,3 +24,13 @@ db.run("DROP TABLE IF EXISTS City", error => {
   db.run("CREATE TABLE City ()")
 })
 ```
+
+3. SELECT the superpower column of the superhero in the Superhero table with an id of 12 and console.log() that superpower in the callback function.
+
+```
+const db = require('./db');
+
+db.get("SELECT superpower FROM Superhero WHERE id=12", (error, row) => {
+  console.log(row.superpower)
+});
+```
