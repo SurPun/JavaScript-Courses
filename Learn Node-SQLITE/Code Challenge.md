@@ -126,3 +126,20 @@ db.each("SELECT * FROM CartoonCharacter WHERE species = 'mouse'", (err, rows) =>
   }
 })
 ```
+
+11. Drop the table Furniture if it exists, then create it again (in that order). Don’t worry about defining a schema for Furniture when you create it.
+
+```
+const db = require('./db');
+
+db.serialize(() => {
+  db.run("DROP TABLE IF EXISTS Furniture;")
+  db.run("CREATE TABLE Furniture")
+});
+```
+
+12. Write a function called logCaffeineLevel that takes the name of a tea and logs its caffeine_level from the Tea table.
+
+```
+
+```
