@@ -113,4 +113,16 @@ db.all("SELECT * FROM Scientist WHERE field = 'biology'", (err, row) => {
 });
 ```
 
-10.
+10. Use db.each() to print the height of every character from the CartoonCharacter database where the species is 'mouse'.
+
+```
+const db = require('./db');
+
+db.each("SELECT * FROM CartoonCharacter WHERE species = 'mouse'", (err, rows) => {
+  if (err) {
+    console.log(err)
+  } else {
+    console.log(rows.height)
+  }
+})
+```
