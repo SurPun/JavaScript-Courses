@@ -158,8 +158,65 @@ const db = require('./db');
 db.run("INSERT INTO Bridge (name, established_year) VALUES ('Brooklyn Bridge', 1883);")
 ```
 
-14.
+14. You want to know the number of people per month that go through the same train station as you use for your commute. Get the traffic property from the TrainStation table where the station_id is 38 and the month is the current month. Log the traffic property of the row to the console.
 
 ```
+const db = require('./db');
 
+db.get("SELECT traffic FROM TrainStation WHERE station_id = 38 AND month = 'January'", (err, rows) => {
+  console.log(rows.traffic)
+})
+```
+
+15. Use the parameter to find the number_of_floors column from the Building table at the user-given address.
+
+```
+const db = require('./db');
+
+const logFloorsForAddress = address => {
+  // Your code here:
+  db.get("SELECT number_of_floors FROM Building WHERE address = $address", {$address: address}, (err, rows) => {
+    console.log(rows.number_of_floors)
+  })
+}
+```
+
+16. Add a row to the BirdOfParadise table with scientific_name Cicinnurus regius and with king bird-of-paradise as its common_name
+
+```
+const db = require('./db');
+
+db.run("INSERT INTO BirdOfParadise (scientific_name, common_name) VALUES ('Cicinnurus regius', 'king bird-of-paradise')")
+```
+
+17. Complete the addMovie function to inserts a movie into the Movie table with columns named title, publication_year, and director. Use the style of placeholders using named parameter and an object as the second argument of db.run().
+
+```
+const db = require('./db');
+
+const addMovie = (title, publicationYear, director) => {
+  db.run("INSERT INTO Movie (title, publication_year, director) VALUES ($title, $pubYear, $director)", {
+    $title: title,
+    $pubYear: publicationYear,
+    $director: director
+    });
+};
+```
+
+18. Use db.each() to list all of the beverage names that have 'soda' as their type from the Minifridge table.
+
+```
+const db = require('./db');
+
+db.each("SELECT name FROM Minifridge WHERE type = 'soda'", (err, rows) => {
+  console.log(rows.name)
+})
+```
+
+19. Take the day off! Add a new holiday to the Holiday database. Set the name attribute to any name you like and set work to false.
+
+```
+const db = require('./db');
+
+db.run("INSERT INTO Holiday (name, work) VALUES ('Suraj', false)")
 ```
