@@ -92,4 +92,13 @@ db.get("SELECT quantity FROM SpiceRack WHERE name = 'paprika'", (err, row) => {
 })
 ```
 
-8.
+8. Use the genre parameter in the function to find the title of every song in the Song database matching the genre.
+
+```
+const db = require('./db');
+
+const selectByGenre = genre => {
+  // Add your code in here
+  db.all("SELECT title FROM Song Where genre = $genre", {$genre: genre})
+}
+```
