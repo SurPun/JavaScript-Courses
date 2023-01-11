@@ -149,3 +149,17 @@ db.get("SELECT * FROM Tea WHERE name = $name", {$name: name}, (err, rows) => {
 })
 }
 ```
+
+13. Insert a new bridge into the Bridge table, with the name Brooklyn Bridge and with an established_year value of 1883.
+
+```
+const db = require('./db');
+
+db.run("INSERT INTO Bridge (name, established_year) VALUES ('Brooklyn Bridge', 1883);")
+```
+
+14.
+
+```
+
+```
