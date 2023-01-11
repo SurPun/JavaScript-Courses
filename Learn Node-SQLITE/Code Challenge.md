@@ -49,4 +49,23 @@ db.all('SELECT * from NonexistentTable', (err, rows) => {
 });
 ```
 
-5.
+5. Use db.each() to find the totalPrice if you bought every shirt from the Clothing table. Select the price from each row where item is 'shirt' and add the prices to totalPrice. Log totalPrice after they have all been added. Each row’s price property is already a number, so you do not need to use Number() to convert it.
+
+```
+const db = require('./db');
+
+let totalPrice = 0;
+db.each(
+  'SELECT price FROM Clothing WHERE item = "shirt"',
+  (err, row) => {
+    if (err) {
+      console.log(err)
+    } else {
+      totalPrice += Number(row.price)
+    }
+  },
+  (err, numRows) =>{
+    console.log(totalPrice)
+  }
+);
+```
