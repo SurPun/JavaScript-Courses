@@ -69,3 +69,15 @@ db.each(
   }
 );
 ```
+
+6. Find a way to wrap the queries in the workspace so that they run synchronously.
+
+```
+const db = require('./db');
+
+db.serialize(() => {
+  db.run('CREATE TABLE Popcorn (id INTEGER PRIMARY KEY, type TEXT)');
+  db.run('INSERT INTO POPCORN (type) VALUES ("cheddar")');
+  db.run('INSERT INTO POPCORN (type) VALUES ("kettle corn")');
+})
+```
