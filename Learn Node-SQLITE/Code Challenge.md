@@ -102,3 +102,15 @@ const selectByGenre = genre => {
   db.all("SELECT title FROM Song Where genre = $genre", {$genre: genre})
 }
 ```
+
+9. Use db.all() to find every scientist from the Scientist table whose field is 'biology' and select all columns. Log the list to the console.
+
+```
+const db = require('./db');
+
+db.all("SELECT * FROM Scientist WHERE field = 'biology'", (err, row) => {
+  console.log(row)
+});
+```
+
+10.
