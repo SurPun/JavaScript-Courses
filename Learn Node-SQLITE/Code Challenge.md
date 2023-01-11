@@ -81,3 +81,15 @@ db.serialize(() => {
   db.run('INSERT INTO POPCORN (type) VALUES ("kettle corn")');
 })
 ```
+
+7. Find and print the quantity column of the spice 'paprika' in a table called SpiceRack based on its name. names are unique, so you only need to retrieve one row.
+
+```
+const db = require('./db');
+
+db.get("SELECT quantity FROM SpiceRack WHERE name = 'paprika'", (err, row) => {
+  console.log(row.quantity)
+})
+```
+
+8.
