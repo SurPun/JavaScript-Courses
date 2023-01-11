@@ -141,5 +141,11 @@ db.serialize(() => {
 12. Write a function called logCaffeineLevel that takes the name of a tea and logs its caffeine_level from the Tea table.
 
 ```
+const db = require('./db');
 
+const logCaffeineLevel = name => {
+db.get("SELECT * FROM Tea WHERE name = $name", {$name: name}, (err, rows) => {
+  console.log(rows.caffeine_level)
+})
+}
 ```
