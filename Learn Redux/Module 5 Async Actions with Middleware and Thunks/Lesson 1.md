@@ -37,4 +37,4 @@ const getUser = (id) => {
 }
 ```
 
-If you’d like to learn more, you can read the redux-thunk documentation and visit the Redux Toolkit site to see how configureStore includes redux-thunk by default.
+If you’d like to learn more, you can read the [redux-thunk documentation](https://github.com/reduxjs/redux-thunk) and [visit the Redux Toolkit site to see how configureStore includes redux-thunk by default.](https://redux-toolkit.js.org/api/getDefaultMiddleware#getdefaultmiddleware)
