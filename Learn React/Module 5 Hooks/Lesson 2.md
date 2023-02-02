@@ -29,6 +29,11 @@ Use a state setter callback function when our next value depends on our previous
 
 Use arrays and objects to organize and manage related data that tends to change together
 
-Use the spread syntax on collections of dynamic data to copy the previous state into the next state like so: setArrayState((prev) => [ ...prev ]) and setObjectState((prev) => ({ ...prev }))
+Use the spread syntax on collections of dynamic data to copy the previous state into the next state like so: 
+
+```setArrayState((prev) => [ ...prev ]) 
+and 
+setObjectState((prev) => ({ ...prev }))
+``` 
 
 Split state into multiple, simpler variables instead of throwing it all into one state object
