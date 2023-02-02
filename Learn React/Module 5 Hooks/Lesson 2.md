@@ -31,7 +31,8 @@ Use arrays and objects to organize and manage related data that tends to change 
 
 Use the spread syntax on collections of dynamic data to copy the previous state into the next state like so: 
 
-```setArrayState((prev) => [ ...prev ]) 
+```
+setArrayState((prev) => [ ...prev ]) 
 and 
 setObjectState((prev) => ({ ...prev }))
 ``` 
