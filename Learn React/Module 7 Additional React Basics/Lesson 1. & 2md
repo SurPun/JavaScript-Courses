@@ -1,0 +1,28 @@
+# Style
+
+# Container Components From Presentational Components
+
+## Review
+
+Congrats! You divided the GuineaPigs component into a container component and a presentational component: containers/GuineaPigsContainer.js and components/GuineaPigs.js.
+
+Here are the steps we took:
+
+Identified that the original component needed to be refactored: it was handling both calculations/logic and presentation/rendering
+
+Copied the original component to a new containers/ folder and renamed it GuineaPigsContainer
+
+Removed all of the presentation/rendering code from the container component
+
+Removed all of the calculation/logic code from the presentational component
+
+Accessed the presentational component from within the container using import and export
+
+Edited the container’s render() method to render the presentational component with the proper props
+
+In this programming pattern, the container component does the work of figuring out what to display. The presentational component does the work of actually displaying it. If a component does a significant amount of work in both areas, then that’s a sign that you should use this pattern!
+
+If you’d like to learn more about this pattern, here are some articles to start with:
+
+[Container Components](https://medium.com/@learnreact/container-components-c0e67432e005)
+[Presentational and Container Components](https://medium.com/@dan_abramov/smart-and-dumb-components-7ca2f9a7c7d0)
