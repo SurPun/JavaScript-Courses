@@ -22,3 +22,11 @@ In summary, the OWASP Top Ten consists of:
     Using Components with Known Vulnerabilities: Vulnerable components, such as out-of-date packages or software, are included within an environment, allowing attackers to use existing exploits to attack.
 
     Insufficient Logging and Monitoring: Lack of detailed monitoring makes it easier for attackers to stay undetected, and it makes it harder to respond after an attack has occurred.
+
+# Session & Cookies vs. localStorage
+
+## Review
+
+Session management is an important aspect of web design and implementation. In this article, we’ve discussed how cookies, localStorage, and sessionStorage can facilitate session management. We also introduced how cookies can be made more secure and the pros and cons of using cookies vs localStorage.
+
+As of now, both cookies and localStorage are used, though that may change with the browser updates and new web standards. Going forward, it’s important to pay attention to any security risks that can target these session management tools.
